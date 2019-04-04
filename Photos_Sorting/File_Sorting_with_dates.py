@@ -30,12 +30,12 @@ def Sort_files():
                 if(str_mkdir in os.listdir(dest_path)):
                     Output_log.insert('end',"Copying "+files[i]+" now into the folder " + str_mkdir+ '\n')
                     try:
-                        sh.copy2(files[i],dest_path+'\\'+str_mkdir)
+                        sh.copy2(files[i],os.path.join(dest_path,str_mkdir))
                     except Exception as e:
                         Output_log.insert('end',e + '\n')
                 else:
                     Output_log.insert('end',str_mkdir + " Directory doesn't exist, creating now"+ '\n')
-                    os.mkdir(dest_path+'\\'+str_mkdir) 
+                    os.mkdir(os.path.join(dest_path,str_mkdir)) 
     Output_log.insert('end', '##### Sorted the files successfully #####')
 ###############################################################################################
 

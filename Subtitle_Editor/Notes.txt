@@ -1,0 +1,39 @@
+###########     RE Module       ###############
+    Builtin module
+  
+    re.match()
+    re.search()
+    re.findall()
+    re.split()
+    re.sub()
+    re.compile()
+
+    https://www.analyticsvidhya.com/blog/2015/06/regular-expression-python/
+    
+###############################################
+
+###########     OS Module       ###############
+    --> Its a built-in Module available in Python by default
+
+        Few Methods 
+        - os.system('cmd')  -->For executing base os shell/cmd commands
+        - os.environ  --> Get the current environment details
+        - os.getgid()/getpid()/getuid()
+        - os.umask 
+        - os.getcwd()
+        - os.chdir(path)
+        - os.listdir(' '/path)
+        - os.mkdir(str)
+        - os.rmdir('')
+        - os.removedirs
+        - os.rename('A','B')
+        - os.stat('fn') --> Gives the statistis of the files
+        - os.walk(path) --> It returns the dirpath,dirname,filename when traversed
+
+    --> OS module has a os.path sub-module which helps in all path related decisions
+        - os.path.join()
+        - os.path.basename(path)    --> This will list the name of the file name
+        - os.path.dirname()         --> It will list the directory name
+        - os.path.exists()
+        - os.path.splitext()        --> it will split the file root name and extension
+        - os.path.split
